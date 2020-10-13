@@ -32,7 +32,7 @@ def deals(request):
 
 
 def leads(request):
-    if request.method == 'POST':
+    if request.method == 'GET':
         obj = funcoes.consumir_api("https://staffmobi.bitrix24.com/rest/1/a69xicp1xnmi8ope/crm.lead.list")
         conexao = funcoes.conectar('testeluigi', 'l1gu3scPT', 'Estmonial!Uhh663913Ty')
         cursor = conexao.cursor()
